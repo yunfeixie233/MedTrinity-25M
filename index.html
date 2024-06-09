@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HQ-Edit: A High-Quality Dataset for Instruction-based Image Editing</title>
+  <title>MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine</title>
 
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -30,34 +30,48 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">HQ-Edit: A High-Quality Dataset for Instruction-based Image Editing</h1>
+          <h1 class="title is-1 publication-title">MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <span>Mude Hui</a></span><sup>*</sup>,</span>
+              <span>Yunfei Xie</a></span><sup>*</sup>,</span>
             <span class="author-block">
-              <span>Siwei Yang</a></span><sup>*</sup>,</span>
+              <span>Ce Zhou</a></span><sup>*</sup>,</span>
             <span class="author-block">
-              <span>Bingchen Zhao</a></span></sup>,</span>
+              <span>Lang Gao</a></span><sup>*</sup>,</span>
             </span>
             <span class="author-block">
-              <span>Yichun Shi</a></span></sup>,</span>
+              <span>Juncheng Wu</a></span><sup>*</sup>,</span>
             </span>
             <span class="author-block">
-              <span>Heng Wang</a></span></sup>,</span>
+              <span>Xianhang Li</a></span></sup>,</span>
             </span>
             <span class="author-block">
-              <span>Peng Wang</a></span></sup>,</span>
+              <span>Hong-Yu Zhou</a></span></sup>,</span>
             </span>
             <span class="author-block">
-              <span>Yuyin Zhou</a></span></sup>,</span>
+              <span>Sheng Liu</a></span></sup>,</span>
+            </span>
+            <span class="author-block">
+              <span>Lei Xing</a></span></sup>,</span>
+            </span>
+            <span class="author-block">
+              <span>James Zou</a></span></sup>,</span>
             </span>
             <span class="author-block">
               <span>Cihang Xie</a></span></sup>,</span>
             </span>
+            <span class="author-block">
+              <span>Yuyin Zhou</a></span></sup>,</span>
+            </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">University of California, Santa Cruz</span>
+            <span class="author-block">Huazhong University of Science and Technology,</span>
+            <span class="author-block">Tongji University,</span>
+            <span class="author-block">UC Santa Cruz,</span>            
+            <span class="author-block">Harvard University,</span>
+            <span class="author-block">Stanford University</span>
+
             
           </div>
 
@@ -86,7 +100,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/UCSC-VLAA/HQ-Edit"
+                <a href="https://huggingface.co/datasets/UCSC-VLAA/MedTrinity-25M"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fa-solidasasa fa-face-smiling-hands"></i>
@@ -119,17 +133,16 @@
 <section class="hero teaser">
   <div class="container">
     <div class="hero-body">
-      <img src="./resources/teaser.png" alt="alt text"
+      <img src="./resources/data_example.png" alt="alt text"
                         style="width: 100%; object-fit: cover; max-width:100%;"></a>
       <h2 class="subtitle has-text-centered">
-        (a) - (d): example images and edit instructions from HQ-Edit. (e) we compare the dataset quality
-        between our HQ-Edit and existing ones. Note that ``Alignment'' and ``Coherence'' are our newly
-        developed metrics for measuring image/text qualities.
+        Our textual description is multigranular with more attributes than radiology report of chest x-rays dataset 
+        MIMIC-CXR, visual QA dataset SLAKE and radiology objects caption dataset ROCO. 
       </h2>
     </div>
   </div>
 </section>
-
+<!-- 
 <section class="section">
   <div class="container ">
     <div class="hero-body">
@@ -137,7 +150,7 @@
   <iframe src="https://laos-y-hqedit.hf.space" frameborder="0" width="100%" height="1000"></iframe>
 </div>
 </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container">
@@ -147,23 +160,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This study introduces HQ-Edit, a high-quality instruction-based image editing dataset
-            with around 200,000 edits. Unlike prior approaches relying on attribute guidance or
-            human feedback on building datasets, we devise a scalable data collection pipeline
-            leveraging advanced foundation models, namely GPT-4V and DALL-E 3. To ensure its high
-            quality,
-            diverse examples are first collected online, expanded, and then used to create
-            high-quality diptychs featuring input and output images with detailed text prompts,
-            followed by precise alignment ensured through post-processing.
-            In addition, we propose two evaluation metrics, Alignment and Coherence, to
-            quantitatively assess the quality of image edit pairs using GPT-4V.
-            HQ-Edit’s high-resolution images, rich in detail and accompanied by comprehensive
-            editing prompts, substantially enhance the capabilities of existing image editing
-            models.
-            For example, an HQ-Edit finetuned InstructPix2Pix can attain state-of-the-art image
-            editing performance, even surpassing those models fine-tuned with human-annotated data.
-            Dataset and models are available at <a
-                href=https://github.com/UCSC-VLAA/HQ-Edit>[HQ-Edit]</a>
+            This paper introduces MedTrinity-25M, a comprehensive, large-scale multimodal dataset for medicine, covering over 25 million images across 10 modalities, with multigranular annotations for more than 65 diseases. These enriched annotations encompass both global textual information, such as disease/lesion type, modality, region-specific descriptions, and inter-regional relationships, as well as detailed local annotations for regions of interest (ROIs), including bounding boxes, segmentation masks. Unlike existing approach which is limited by the availability of image-text pairs, we have developed the first automated pipeline that scales up multimodal data by generating multigranular visual and texual annotations (in the form of image-ROI-description triplets) without the need for any paired text descriptions. Specifically, data from over 90 different sources have been collected, preprocessed, and grounded using domain-specific expert models to identify ROIs related to abnormal regions. 
+            We then build a comprehensive knowledge base and prompt multimodal large language models to perform retrieval-augmented generation with the identified ROIs as guidance, resulting in multigranular texual descriptions. 
+            Compared to existing datasets, MedTrinity-25M provides the most enriched annotations, supporting a comprehensive range of multimodal tasks such as captioning and report generation, as well as vision-centric tasks like classification and segmentation. This dataset can be utilized to support large-scale pre-training of multimodal medical AI models, contributing to the development of future foundation models in the medical domain.
+            The dataset is publicly available at <a
+                href=https://github.com/UCSC-VLAA/HQ-Edit>[MedTrinity-25M]</a>
           </p>
         </div>
       </div>
@@ -176,80 +177,51 @@
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">HQ-Edit Method</h2>
+            <h2 class="title is-3">MedTrinity-25M Pipeline</h2>
             <div class="content has-text-justified">
-              <center><img class="center" src="./resources/method.png" width="100%"></center>
+              <center><img class="center" src="./resources/pipeline.png" width="100%"></center>
               <p>
-                <strong style="font-weight: 900">Method Overview.</strong>
-                Our method consists of three steps: (1)Expansion: Massively generating image descriptions and
-                edit instructions based on seed samples using GPT-4. (2)Generation: Generating diptychs using
-                GPT-4V and DALL-E according to image descriptions and instructions. (3)Post-Processing:
-                Post-process diptychs and edit instructions with GPT-4V and other various methods to produce
-                image pairs and further enhance the quality of the dataset in different aspects.
+                <strong style="font-weight: 900">Data construction pipeline.</strong>
+                1) Data processing:  extracting essential information from collected data, including <strong>metadata integration</strong> to generate coarse caption, <strong>ROI locating</strong>, and <strong>medical knowledge collection</strong>. 2) Multigranular textual description generation: using this information to prompt MLLM to generate MedTrinity-25M.
               </p>
             </div>
           </div>
         </div>
       </section>
+    
 
       <section class="section">
         <div class="container">
           <!-- Abstract. -->
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-              <h2 class="title is-3">HQ-Edit Dataset</h2>
+              <h2 class="title is-3">Statistical overview of MedTrinity-25M</h2>
               <div class="content has-text-justified">
-                <center><img class="center" src="./resources/data_sample.png" width="100%"></center>
-                <p>
-                  <strong style="font-weight: 900">HQ-Edit Data Sample.</strong style="font-weight: 900">
-                    Example data sampled from HQ-Edit. Our data contains two main parts, Instruction (input, edit,
-                    inverse-edit, output) and Image (input image, output image). The two samples highlight that, 1)
-                    the image is densely packed with details, 2) the input and ouput offers a comprehensive
-                    description of the input and output image, and 3) the edit and inverse-edit instructions
-                    precisely delineate the transformations occurring between the two images.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="container">
-            <!-- Abstract. -->
-            <div class="columns is-centered has-text-centered">
-              <div class="column is-four-fifths">
-                <h2 class="title is-3">Dataset Statistics Results</h2>
-                <div class="content has-text-justified">
-                  <center><img class="center" src="./resources/round.png" width="100%"></center>
-                  <p>
-                    <strong style="font-weight: 900">HQ-Edit Data Sample.</strong style="font-weight: 900">
-                      Distribution of edit types and keywords in instructions. The inner ring depicts the types of
-                      edit instructions and the outer circle shows the frequencies of instruction keywords. This
-                      demonstrates the rich diversity contained within our instructions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="container">
-              <!-- Abstract. -->
-              <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                  <h2 class="title is-3">Results of InstructPix2Pix Finetuned on HQ-Edit</h2>
-                  <div class="content has-text-justified">
-                    <center><img class="center" src="./resources/quantitative.png" width="100%"></center>
-                    <p>
-                      <strong style="font-weight: 900">HQ-Edit Data Sample.</strong style="font-weight: 900">
-                        Qualitative comparison of InstructPix2Pix, MagicBrush, HIVE and HQ-Edit.
-                        HQ-Edit demonstrates a more comprehensive diversity of editing instructions and possesses the
-                        capability to manipulate images with greater precision and detail.
-                    </p>
+                <div class="image-grid">
+                  <div class="image-item">
+                    <img src="./resources/modality.png" alt="Image 1">
+                    <p>(a) Modality distribution in MedTrinity-25M.</p>
+                  </div>
+                  <div class="image-item">
+                    <img src="./resources/organ.png" alt="Image 2">
+                    <p>(b) Anatomical and biological structures in MedTrinity-25M.</p>
+                  </div>
+                  <div class="image-item">
+                    <img src="./resources/data scale.png" alt="Image 3">
+                    <p>(c) Data size comparison.</p>
+                  </div>
+                  <div class="image-item">
+                    <img src="./resources/wordcloud.png" alt="Image 4">
+                    <p>(d) Wordcloud of disease statistic  in MedTrinity-25M.</p>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
