@@ -2,7 +2,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -17,7 +16,6 @@ body {
   font-variant: small-caps;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 0;
@@ -27,13 +25,11 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
-
 .publication-title {
 }
 
 .publication-banner {
   max-height: parent;
-
 }
 
 .publication-banner video {
@@ -53,6 +49,7 @@ body {
 
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
+    margin-bottom: 20px; /* 确保作者部分和链接部分有足够的间距 */
 }
 
 .publication-venue {
@@ -85,29 +82,8 @@ body {
 .publication-banner img {
 }
 
-.publication-authors {
-  /*color: #4286f4;*/
-}
-
-.publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-
-    overflow: hidden;
-    border-radius: 10px !important;
-}
-
-.publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.publication-body img {
+.publication-links {
+    margin-top: 20px; /* 增加间距以确保链接位于作者部分下方 */
 }
 
 .results-carousel {
@@ -127,7 +103,6 @@ body {
   margin: 0;
 }
 
-
 .interpolation-panel {
   background: #f5f5f5;
   border-radius: 10px;
@@ -139,10 +114,6 @@ body {
 }
 
 .interpolation-video-column {
-}
-
-.interpolation-panel .slider {
-  margin: 0 !important;
 }
 
 .interpolation-panel .slider {
