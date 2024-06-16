@@ -126,3 +126,9 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.image-item p {
+  text-align: center; /* 设置文字居中 */
+  font-size: 1.2em; /* 放大文字，1.2em 表示比正常大小大20% */
+  font-weight: bold; /* 设置文字为加粗 */
+}
