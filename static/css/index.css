@@ -132,3 +132,8 @@ body {
   font-size: 1.2em; /* 放大文字，1.2em 表示比正常大小大20% */
   font-weight: bold; /* 设置文字为加粗 */
 }
+.image-item img {
+  max-width: 80%; /* 确保图像不会超出其容器的宽度 */
+  height: auto;   /* 使高度自动调整以保持比例 */
+  margin: 0 auto;  /* 水平居中 */  
+}
