@@ -20,7 +20,25 @@ body {
   padding-top: 0;
   padding-bottom: 0;
 }
-
+.hero.teaser .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero.teaser .hero-body {
+  width: 80%;       /* 设置容器宽度为 80% */
+  text-align: center; /* 确保文字居中 */
+}
+.hero.teaser img {
+  width: 100%;      /* 确保图像宽度填满容器 */
+  height: auto;     /* 自动调整高度以保持比例 */
+  display: block;   /* 使图像成为块级元素 */
+  margin: 0 auto;   /* 水平居中 */
+}
+.hero.teaser .subtitle {
+  margin-top: 20px; /* 调整文字与图片之间的间距 */
+  text-align: center; /* 使文字居中 */
+}
 .teaser {
   font-family: 'Google Sans', sans-serif;
 }
