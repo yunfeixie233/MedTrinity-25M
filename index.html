@@ -107,14 +107,50 @@
                   <span>Code</span>
                   </a>
               </span>
+              <!-- Expert Evaluation Link. -->
+              <span class="link-block">
+                <a href="#" onclick="expertEvaluation(); return false;"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-user-expert"></i>
+                  </span>
+                  <span>Expert Evaluation</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
 
+
+<script>  
+function expertEvaluation() {
+  const expertPages = [
+      'https://docs.google.com/forms/d/e/1FAIpQLSdBrv51AHr03L_b2a-B5AT-sXSQZ_87-JxOYpZsnJS3-XvUoA/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfhR598rYjlewzF5oLXrT91U59haPGke8tXxk9-4_C8qFMBHA/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSeBTejoCcICiFzda1maxcznb2N4mYtUogzCmsMnIxqwNp2Lng/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfIb68IXP8vyj9p8nymuAJVomn-WCHpO4ytOlpH2xNHWSy1nQ/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSc-pp5xGnZiyZx-d35w8Plpzm0djlJ8lDmdaHqkzj7lMh6nAw/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfkki3__iJG1pklwQjHkG2Ow1LlD2tsI_7xSKcGfxlBcr-7gw/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSeTSOCbcsGwfEXvYp-d3mh9OStauB7_ZFeVXERFkrOCikWnFw/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSc2FQEk4kQRG0YZX5BSb2NlBmR9DhuP9tnsPSsNn4t3P_Qvag/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSc9eHPiP21h5WGTspca1btOSckSff3VD0uBhzR4TiSdTq-LMw/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfObN26FcI2XpvEKSu9aAHv_KWlxbHZCEDgyLlgszXiWGDbKg/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSdUS6KGKs-cd5hgv94gnYMzerjNKfKtWvbzyodVepTXTm_AOQ/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSehdx2jnga8Ama_1U2AO2lLx5OLxwVz3ZHJhfSbPWj_HeJZ5g/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfEJmCJn1ViGYvNtg8yi3NAtF4sT_lA1QtNnPe_yBuZhIIyJA/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLScTYJnMozZCQRlNTBg-qb3iVj_s6WcQZ_2XA1Yb8Uc02u_iNA/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSf2L2qzFtyivH3pGJ0_e36vsaYNSYlCKcAQsmskNNsi6YVY6A/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSflFRrBSYYoIrejn0BNlEaH3vY3lnxg6ipq1YnLWMo3iB1NLg/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSci18UiECPNNF8LkNGgCf_oAXX37ppdET5hWk4Og78jFrEwHw/viewform',
+      'https://docs.google.com/forms/d/e/1FAIpQLSfyOMix_X3QC8qfOjyqt9Up_xrOOmhBGMw-bKkfeVxSsHZZnQ/viewform'
+  ];
+  const randomPage = expertPages[Math.floor(Math.random() * expertPages.length)];
+  window.location.href = randomPage;
+}
+</script>
 
 
 <section class="hero teaser">
